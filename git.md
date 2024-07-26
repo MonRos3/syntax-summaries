@@ -11,7 +11,8 @@ git add <file>
 git commit -m “update message here”
 
 git fetch --all
-git branch -agit checkout -b tristan origin/tristan
+git branch -a
+git checkout -b branch origin/branch
 
 git branch —set-upstream-to=origin/<branch> <branch>git branch 
 
