@@ -66,3 +66,9 @@ To add a tag [for significant commit]:
 ```bash
 git tag “v1.0”
 ```
+
+## REVIEWING GIT LOG
+
+```bash
+git log
+```
