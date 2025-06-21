@@ -1,6 +1,6 @@
 # Terminal Commands
 
-Note: I use a Mac, so these terminal commands will differ from Windows-based systems. MacOS command-line interfaces [CLIs] uses a Unix-based shell, with some older systems using bash by default, and Mac systems [since Catalina] using zsh by default.
+Note: I use a Mac, so these terminal commands will differ from Windows-based systems. MacOS command-line interfaces [CLIs] use a Unix-based shell, with some older systems using bash by default, and newer macOS systems [since Catalina] using zsh by default.
 
 Later on I will make a file titled "Command Prompt" tailored for Windows CLI commands.
 
@@ -37,7 +37,7 @@ whoami   
 ### Bonus:
 
 Auto-complete shortcut, type part of the filename, then:
-press the tab key
+press the tab key. This will save you a lot of typing, especially if you have unique file and folder names!
 
 Clear the command line interface [CLI]:
 
