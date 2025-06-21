@@ -28,15 +28,21 @@ List items; including hidden items [items with a “.” at the start of their n
 ls -a    
 ```
 
+Display current username:
+
 ```bash
-whoami    //displays current username
+whoami   
 ```
 
-Bonus:
-<tab>       //auto-complete shortcut
+### Bonus:
+
+Auto-complete shortcut, type part of the filename, then:
+press the tab key
+
+Clear the command line interface [CLI]:
 
 ```bash
-clear    //clears the code line interface [CLI]
+clear   
 ```
 
 ## Creating, Editing, Deleting Folder and Files
@@ -117,11 +123,15 @@ deactivate
 
 ## Zip a File
 
+```bash
 tar -czf ~/path/zippedfile.zip ~/path-to-dest/folder
+```
 
 ## Unzip a File
 
+```bash
 tar -x ~/path/somefile.zip
+```
 
 ## Getting Help
 
