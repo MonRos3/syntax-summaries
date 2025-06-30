@@ -31,6 +31,12 @@ INSERT INTO Employees VALUES
  (202, 'John Smith', 67050);
 ```
 
+### QUIT DATABASE INSTANCE
+
+```bash
+ \q
+```
+
 ## MANIPULATING DATA
 
 ### SELECT ALL ROWS AND COLUMNS [*] OF DATA FROM TABLE
