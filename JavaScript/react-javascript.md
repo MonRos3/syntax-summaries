@@ -98,6 +98,10 @@ Router = navigation between components
 
 npm i react-router-dom
 
+```js
+
+```
+
 ## REDUCER
 
 Reducer = manages state in a centralized way
@@ -106,6 +110,62 @@ Reducer = manages state in a centralized way
 - Components: what should happen; Reducer: how it’s done
 - separates logic from user actions
 - information gets passed to the reducer in the payload
+
+state.js:
+
+```js
+import { useState } from "react";
+
+export default function App() {
+
+const [movies, setMovies] = useState([]);
+
+...
+    const loadedMovies = ...;
+    setMovies
+...
+
+return (
+    <div>{movies.length}</div>
+);
+
+}
+```
+
+reducer.js
+
+```js
+import { useReducer } from "react";
+
+const [state, dispatch] = useReducer(ticketReducer, initialState);
+
+export default function ticketReducer(state, action) {
+  switch (action.type) {
+    case "ADD TICKET":
+      return { ...state, tickets: [...state.tickets, action.payload] };
+
+    //other actions
+
+    default:
+      return state;
+  }
+}
+
+// Any component that has access to the dispatch function of the reducer
+
+const handleSubmit = (e) => {
+  const ticketData = {
+    title,
+    description,
+    priority,
+  };
+
+  dispatch({
+    type: "ADD_TICKET",
+    payload: ticketData,
+  });
+};
+```
 
 ## ContextAPI
 
@@ -122,3 +182,24 @@ Use context: if you have info that needs to get shared across MULTIPLE component
     - cart items
     - theme settings
     - app notifications
+
+```js
+import { createContext } from "react";
+
+const UserContext = createContext({username: "Guest"})
+
+// use [previously created] context
+
+import {useContext} from "react";
+import {UserContext} from ...
+
+const user = useContext(UserContext);
+
+// wrap UserContext.Provider around every component that needs it
+
+const user = {username: "Admin"}
+<UserContext.Provider value={user}>
+    <ComponentA></ComponentA>
+    <ComponentB></ComponentB> //uses ComponentC
+</UserContext.Provider>
+```
