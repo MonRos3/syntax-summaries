@@ -19,10 +19,12 @@ Initialize git repo to track existing project:
 git init
 ```
 
-Connect local repo to remote origin:
+Connect local project to remote origin:
 
 ```bash
-git branch —set-upstream-to=origin/<branch> <branch>git branch
+git remote add origin https://github.com/user/path-to-repo
+git branch -M main
+git push -u origin main
 ```
 
 ## CHECKING OUT THE FILE STRUCTURE
