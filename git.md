@@ -2,6 +2,12 @@
 
 ## SETTING UP YOUR GIT METADATA
 
+Check all git config settings:
+
+```bash
+git config -l --show-origin
+```
+
 ```bash
 git config --global credential.helper store
 git config --global push.default simple
