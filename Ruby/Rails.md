@@ -96,20 +96,10 @@ which gem
 
 ## Local Rails Implementation
 
+## Local Rails Implementation
+
 ### Run a new rails project
 
 ```bash
 rails new demo
 ```
-
-### Start the Server
-
-```bash
-rails server -b 0.0.0.0
-```
-
-## Containerized Rails Implementation
-
-### DOCKER
-
-### PODMAN
