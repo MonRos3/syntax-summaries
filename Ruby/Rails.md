@@ -96,8 +96,6 @@ which gem
 
 ## Local Rails Implementation
 
-## Local Rails Implementation
-
 ### Run a new rails project
 
 ```bash
@@ -128,4 +126,15 @@ Start podman:
 podman machine start
 ```
 
-Fetch a docker image and run it:
+Fetch a docker* image and run it:
+*podman is able to work with docker images and uses many of the same commands
+
+```bash
+podman run -it -p 3000:3000 -v ${PWD}:/home image/url-path
+```
+
+Then, from inside the container, start the server:
+
+```bash
+rails server -b 0.0.0.0
+```
