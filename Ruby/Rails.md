@@ -103,3 +103,29 @@ which gem
 ```bash
 rails new demo
 ```
+
+### Start the Server
+
+```bash
+rails server -b 0.0.0.0
+```
+
+## Containerized Rails Implementation
+
+### DOCKER
+
+### PODMAN
+
+If you've never used podman before, you'll need to initialize it:
+
+```bash
+podman machine init
+```
+
+Start podman:
+
+```bash
+podman machine start
+```
+
+Fetch a docker image and run it:
