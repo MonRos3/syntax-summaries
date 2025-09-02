@@ -80,3 +80,9 @@ git tag “v1.0”
 ```bash
 git log
 ```
+
+## REMOVING BRANCHES THAT ARE NO LONGER IN USE
+
+```bash
+git fetch --prune
+```
