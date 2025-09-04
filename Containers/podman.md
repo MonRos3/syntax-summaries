@@ -22,6 +22,12 @@ podman machine stop
 podman machine list
 ```
 
+OR
+
+```bash
+podman ps -a
+```
+
 ## Container Management
 
 ### Running Containers
